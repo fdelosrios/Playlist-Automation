@@ -159,7 +159,7 @@ Configure Apache
 --------------------------------------
 - Move site config to apache folder
 ```bash
-sudo cp /data/radio/scripts/conf/radio.conf /etc/apache2/sites-enabled/servername.conf
+sudo cp /data/radio/script/conf/radio.conf /etc/apache2/sites-enabled/servername.conf
 ```
 
 - Remove default apache host
@@ -188,6 +188,8 @@ max_execution_time = 3600
 short_open_tag = On
 error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
 date.timezone = Europe/Berlin
+memory_limit = 256M
+max_input_time
 ```
 
 - Apache envvars
@@ -208,7 +210,7 @@ sudo a2enmod rewrite
 
 - Apache config
 ```bash
-sudo nano /etc/apache2/apache.config
+sudo nano /etc/apache2/apache2.conf
 ```
 
 - Change
@@ -236,12 +238,7 @@ sudo nano /etc/apache2/apache.config
 #       Require all granted
 #</Directory>
 ```
-```bash
-memory_limit = 256M
-```
-```bash
-max_execution_time
-max_input_time
+
 ```
 Ramdisk
 --------------------------------------
