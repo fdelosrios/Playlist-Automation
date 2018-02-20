@@ -42,7 +42,7 @@ Create Folders an get repository
 ```bash
 sudo mkdir /data
 cd /data
-sudo git clone https://github.com/seekwhencer/Playlist-Automation.git
+sudo git clone https://github.com/fdelosrios/Playlist-Automation.git
 sudo mv Playlist-Automation radio
 
 sudo mkdir /data/web
